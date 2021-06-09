@@ -1,0 +1,53 @@
+<html>
+<head>
+<style type="text/css">
+.container {
+  margin: -10px;
+  background:url(inc/store.jpg);
+  color: #fff;
+  width: 150%;
+  height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  opacity: .5;
+  position: absolute;
+}
+.content {
+  z-index: 1;
+}
+.outer{
+  height: 800px;
+  width: 680px;
+  line-height: 30%;
+  font-size: 15px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+<div class="outer">
+      <a href="ballina.html" target="ballina.html"><img src="inc/sup.png" width="20%"/></a>
+      <p style="font-family:  "Courier New", Courier, monospace;">New York</p>
+      <p style="font-family:  "Courier New", Courier, monospace;">190 Bowery</p>
+      <p style="font-family:  "Courier New", Courier, monospace;">NYC 10012</p>
+      <p style="font-family:  "Courier New", Courier, monospace;">Tel 212-966-7799</p>
+      <br>
+      <p style="font-family:  "Courier New", Courier, monospace;">Open 11-17(Mon-Sat) 12-6(Sun)</p>
+
+        <iframe width="360" height="360" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+    </div>
+  </div>
+  <div class="color-overlay"></div>
+</div>
+</body>
+
+</html>
