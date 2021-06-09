@@ -1,0 +1,110 @@
+<html>
+<head>
+<style type="text/css">
+.container {
+  margin: -10px;
+  background: url(inc/phone.jpg);
+  color: #fff;
+  width: 150%;
+  height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: red;
+  opacity: .5;
+  position: absolute;
+}
+.content {
+  z-index: 1;
+}
+.outer{
+  height: 800px;
+  width: 680px;
+  line-height: 30%;
+  font-size: 17px;
+}
+button{
+  background: white;
+  border: none;
+  color: red;
+  font-family:  "Courier New", Courier, monospace;
+}
+</style>
+<style type="text/javascript">
+function vForm() {
+  var x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("plotso emrin");
+    return false;
+  }
+  var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("plotso mbiemrin");
+    return false;
+  }
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("plotso emailin");
+    return false;
+  }
+    var x = document.forms["myForm"]["order"].value;
+  if (x == "") {
+    alert("plotso numrin");
+    return false;
+  }  var x = document.forms["myForm"]["select"].value;
+  if (x == "") {
+    alert("plotoso fushat");
+    return false;
+  }  var x = document.forms["myForm"]["msg"].value;
+  if (x == "") {
+    alert("plotso messazhin");
+    return false;
+  }
+
+} 
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <div class="outer">
+      <a href="ballina.html" target="ballina.html"><img src="inc/sup.png" width="20%"/></a>
+      <p> Contact Supreme :</p>
+      <form name="myForm" onsubmit="return vForm()" method="post">
+        <table>
+          <tr>
+            <td><input type="text" placeholder="First Name" name="name"></td>
+            <td><input type="text" placeholder="Last Name" name="lname"></td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="Your Email" name="email"></td>
+            <td><input type="text" placeholder="Order Number" name="order"></td>
+          </tr>
+          <tr>
+            <td colspan="3"> <select>
+            <option value="1">online status order request</option>
+            <option value="2">online return</option>
+            <option value="3">online order lost package</option>
+            <option value="4">story iquiries</option>
+            <option value="5">press</option>
+          </select></td>
+          </tr>
+          <tr><td colspan="3"><p style="color:white;">Message</p></td></tr>
+          <tr>
+            <td colspan="3"><textarea name="message" form="msg"></textarea></td>
+          </tr>
+          <tr><td colspan="3"><input type="submit" value="Send" name="sbm"></td></tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  <div class="color-overlay"></div>
+</div>
+</body>
+
+</html>
